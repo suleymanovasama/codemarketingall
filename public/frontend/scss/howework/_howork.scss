@@ -1,0 +1,355 @@
+main{
+    #outcomes-one{
+        .row{
+            padding: 0px 32px;
+            @media (max-width:768px) {
+                padding: 0;
+            }
+        }
+    }
+    #work-one{
+        background-color: $background-color-white;
+        .work-one-left{
+            
+            padding: 32px 0px;
+
+            @media (max-width:768px) {
+                padding: 16px 0px;
+            }
+
+            .left-up{
+                padding: 0px 40px;
+                margin: 32px 0px;
+                h1{
+                    @include TextFont($f_size:54px, $text_weight:700);
+                }
+                @media (max-width:768px) {
+                    margin: 16px 0px;
+                    padding: 0px 16px;
+                    h1{
+                        @include TextFont($f_size:32px);
+                    }
+                }
+            }
+            .left-down{
+                padding: 0px 40px;
+                margin: 32px 0px;
+                p{
+                    @include TextFont($f_size:18px, $margin:0 0 16px 0, $line_height:1.4);
+                }
+                @media (max-width:768px) {
+                    margin: 16px 0px;
+                    padding: 0px 16px;
+                    p{
+                        @include TextFont($f_size:16px);
+                    }
+                }
+            }
+        }
+    }
+    #work-two{
+        .row{
+            padding: 0 80px;
+            @media (max-width:768px) {
+                padding: 0 24px;
+            }
+        }
+        .work-two-img{
+            @include flexible(center,center,row);
+            img{
+                width: max-content;
+                object-fit: contain;
+                width: 100%;
+            }
+            @media (max-width:768px) {
+                order: 2;
+                img{
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        .work-two-content{
+            @include flexible($jus:center, $direction:column);
+            h3{
+                @include TextFont($f_size:20px, $margin:0 0 8px 0);
+            }
+            h2{
+                @include TextFont($f_size:44px, $text_weight:700, $padding:8px 0 32px 0, $line_height:1.07);
+            }
+            p{
+                @include TextFont($f_size:18px, $line_height:1.4, $margin:0 0 16px 0);
+                width: 84%;
+            }
+            @media (max-width:768px) {
+                p{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    #work-three{
+        .row{
+            padding: 0 80px;
+            @media (max-width:768px) {
+                padding: 0 24px;
+            }
+        }
+        .work-three-img{
+            @include flexible(center,center,row);
+            img{
+                width: max-content;
+                object-fit: contain;
+                width: 100%;
+            }
+            @media (max-width:768px) {
+                order: 2;
+                img{
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        .work-three-content{
+            @include flexible($jus:center, $direction:column);
+            h3{
+                @include TextFont($f_size:20px, $margin:0 0 8px 0);
+            }
+            h2{
+                @include TextFont($f_size:44px, $text_weight:700, $padding:8px 0 32px 0, $line_height:1.07);
+            }
+            p{
+                @include TextFont($f_size:18px, $line_height:1.4, $margin:0 0 16px 0);
+                width: 84%;
+            }
+            @media (max-width:768px) {
+                p{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    #support-network{
+        // border: 2px solid red;
+
+        h2{
+            // border: 2px solid red;
+            @include TextFont($f_size:44px, $text_weight:700, $margin:0 0 40px 0, $line_height:1.07, $padding:0 0 0 71px);
+
+            @media (max-width:768px) {
+                padding: 0;
+                font-size: 24px;
+            }
+            @media (min-width:768px) and (max-width:1400px) {
+                padding: 66px;
+            }
+        }
+
+        .buttons-area{
+            display: flex;
+            flex-direction: column;
+
+            button{
+                background-color: transparent;
+                border: 0px;
+                display: block;
+                font-size: 18px;
+                text-align: left;
+                padding: 8px 20px;
+                width: 186px;
+                color: $special-green-hover;
+            }
+            .btnActive{
+                display: flex !important;
+                justify-content: space-between !important;
+                background-color: #E9FFE8 !important;
+                color: $special-green-hover !important;
+                font-size: 20px;
+            }
+            .hello{
+                display: none;
+            }
+            .cart{
+                display: block !important;
+            }
+        }
+
+        .right-one{
+            display: none;
+        }
+        .ok{
+            display: block !important;
+        }
+
+        .support-text{
+            padding-right: 25px;
+            margin-bottom: 54px;
+            h3{
+                @include TextFont($f_size:30px, $margin: 0 0 24px 0, $line_height:1.16, $text_weight:700);
+            }
+            p{
+                @include TextFont($f_size:19px, $line_height:1.4, $margin:0 0 16px 0);
+            }
+        }
+        .support-img{
+            margin-bottom: 54px;
+            img{
+                max-width: 499px;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .support-contents{
+            // border: 2px solid red;
+            padding: 0;
+            .support-content{
+                padding-right: 20px;
+                margin-bottom: 40px;
+
+                img{
+                    margin-bottom: 14px;
+                    width: 30px;
+                    height: 30px;
+                    object-fit: contain;
+                }
+                h6{
+                    @include TextFont($f_size:16px, $line_height:1, $text_weight:700, $margin:0 0 24px 0);
+                }
+                p{
+                    @include TextFont($f_size:14px, $margin:0 0 20px 0);
+                    width: 85%;
+                }
+            }
+        }
+
+    }
+    #three{
+        .for-how-work{
+            @media (max-width:768px) {
+                padding: 0 24px;
+            }
+        }
+    }
+    #work-inputs{
+        background-color: $table-left-white;
+        .inputs-left{
+            padding: 32px 0px;
+            @media (max-width:768px) {
+                padding: 16px 0px;
+            }
+            .inputs-left-up{
+                padding: 0px 40px;
+                margin: 32px 0px;
+                h1{
+                    margin-bottom: 16px;
+                    font-size: 54px;
+                    font-weight: 700;
+                }
+                @media (max-width:768px) {
+                    padding: 0px 20px;
+                    margin: 16px 0px;
+                    h1{
+                        font-size: 36px;
+                    }
+                }
+            }
+            .inputs-left-down{
+                padding: 0px 40px;
+                margin: 32px 0px;
+                p{
+                    font-size: 19px;
+                    line-height: 1.4;
+                    margin-bottom: 16px;
+                }
+                @media (max-width:768px) {
+                    padding: 0px 20px;
+                    margin: 16px 0px;
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .inputs-right{
+            // border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media (max-width:768px) {
+                padding: 0px 16px;
+            }
+            .inputs-right-up{
+                padding: 32px 0px;
+                
+                .inputs-area{
+                    margin-top: 17px;
+                    // border: 2px solid red;
+                    display: flex;
+                    flex-direction: column;
+                    .input-side{
+                        margin-bottom: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        label{
+                            display: block;
+                            margin-bottom: 8px;
+                            font-size: 16px;
+                        }
+                        input{
+                            background: transparent;
+                            display: block;
+                            @include Inputs($width:100%,$padding:0px 16px, $height:46px);
+                            border: 1px solid $social-media;
+                            &:focus{
+                                border: 1px solid $special-blue;
+                            }
+                        }
+                        p{
+                            padding: 10px 0 0 0;
+                            font-size: 11px;
+                            color: $social-media;
+                            line-height: 1.4;
+                            margin: 0;
+                        }
+                    }
+                    .input-button-side{
+                        // border: 2px solid red;
+                        @include flexible($jus:flex-end);
+                        button{
+                            @include _button($padding:0px 36px, $font_size:16px,$border_radius:24px, $bg_color:$special-green-hover, $height:46px, $color:$special-green);
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-color: transparent;
+                            transition: 0.3s all ease-in-out;
+                            &:hover{
+                                @include _button( $bg_color:$special-green, $color:$special-green-hover);
+                            }
+                            @media (max-width:768px) {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width:768px) {
+                    padding: 16px 0px;
+                }
+            }
+            .inputs-right-down{
+                p{
+                    text-align: center;
+                    font-size: 12px;
+                    color: $social-media;
+                    margin: 16px 0 0 0;
+                    a{
+                        // text-decoration: none;
+                        color: $social-media;
+                    }
+                }
+            }
+        }
+    }
+}

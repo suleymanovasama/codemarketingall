@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="455px" viewBox="0 0 1440 455" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>660302C4-AC67-4B06-AA4F-A9E28F4CCB27</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0.576265347" y="0" width="1440" height="455"></rect>
+    </defs>
+    <g id="Start-Today" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Start-Today---Desktop---Start-Today" transform="translate(0.000000, -4662.000000)">
+            <g id="Content/StartToday/CTA/Desktop" transform="translate(-1.000000, 4662.000000)">
+                <g id="BG-Image" transform="translate(0.423735, 0.000000)">
+                    <g id="Mask">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use fill="#2A32C5" xlink:href="#path-1"></use>
+                        <circle id="Oval-Copy" stroke="#FFFFFF" stroke-width="2" opacity="0.580868676" mask="url(#mask-2)" cx="274.576265" cy="111" r="67"></circle>
+                        <path d="M1072.59765,-44 C1047.2358,-7.46729408 1047.2358,19.7213413 1072.59765,37.5659062 C1110.64043,64.3327535 1187.93841,26.9583664 1262.66705,53.5899421 C1337.39569,80.2215179 1343.10317,126.411936 1373.90713,181.131655 C1404.71109,235.851374 1507.07111,247 1529.84607,247 C1545.02937,247 1568.27277,238.744681 1599.57627,222.234044" id="Path-2" stroke="#FFFFFF" stroke-width="2" opacity="0.580868676" mask="url(#mask-2)"></path>
+                        <path d="M-25.4237347,320.6193 C-25.4237347,319.013078 28.4153717,300.139978 136.093585,264 L55.3349249,398.398594 L240.576265,360.373276 L240.576265,409" id="Path-3" stroke="#FFFFFF" stroke-width="2" opacity="0.580868676" mask="url(#mask-2)" transform="translate(107.576265, 336.500000) rotate(1.000000) translate(-107.576265, -336.500000) "></path>
+                    </g>
+                    <polygon id="Fill-1" stroke="#FFFFFF" stroke-width="2" opacity="0.580868676" points="1219.04848 482 1151.57627 414.527863 1219.1042 347 1286.57627 414.472137"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

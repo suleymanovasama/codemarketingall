@@ -1,0 +1,159 @@
+main{
+    #one{
+        #learning-center-for{
+            display: flex;
+            flex-direction: column;
+            justify-content: center !important;
+        }
+        .for-learning{
+            h1{
+                margin-bottom: 20px !important;
+            }
+            h3{
+                font-size: 18px !important;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size: 18px !important;
+                margin: 16px 0px;
+                line-height: 1.4;
+            }
+            
+        }
+        input{
+            background-color: transparent !important;
+            border: 1px solid $social-media;
+        }
+        select{
+            background-color: transparent !important;
+            border: 1px solid $social-media;
+
+        }
+    }
+    .for-background{
+        background-color: #CADEEA !important;
+    }
+    #learning-two{
+        img{
+            max-width: 100%;
+        }
+    }
+    #learning-two-rigth{
+        h2{
+            text-align: center;
+        }
+        align-items: flex-end;
+    }
+    #webinarsevent{
+        .for-first-row-learning{
+            padding: 0px 80px;
+            @media (max-width:768px) {
+                padding: 0px 24px;
+            }
+        }
+        .webinars-card{
+            margin-bottom: 15px;
+            .card-left{
+                border: 1px solid $black;
+                padding: 14.9px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                .first-span{
+                    font-size: 16px;
+                }
+                .second-span{
+                    font-size: 36px;
+                    margin: 12px 0px;
+                }
+                @media (max-width:768px) {
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    span{
+                        font-size: 20px !important;
+                    }
+                }
+                @media (min-width:768px) and (max-width:1300px) {
+                    height: 100%;
+                }
+            }
+            .card-right{
+                display: flex;
+                border: 1px solid $black;
+                .card-right-first{
+                    width: 50%;
+                    padding: 20px 16px;
+                    h3{
+                        padding: 0;
+                        margin: 0;
+                        font-size: 30px;
+                        line-height: 1.16;
+                        font-weight: 700;
+                    }
+                }
+                .card-right-second{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 16px;
+    
+    
+                    p{
+                        font-size: 18px;
+                        margin-bottom: 16px;
+                        line-height: 1.4;
+                    }
+                    a{
+                        text-transform: uppercase;
+                        color: $social-media;
+                    }
+                }
+                @media (max-width:768px) {
+                    h3{
+                        font-size:24px;
+                    }
+                    flex-direction: column;
+                    .card-right-first{
+                        width: 100%;
+                    }
+                    .card-right-second{
+                        width: 100%;
+                    }
+                }
+            }
+            
+        }
+        .addtion-button{
+            // border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+            a{
+                text-decoration: none;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                height: 46px;
+                border: 2px solid $special-green-hover;
+                border-radius: 24px;
+                padding: 0 36px;
+                background-color: transparent;
+                color: $special-green-hover;
+                transition: 0.3s all ease-in-out;
+                font-weight: 700;
+                &:hover{
+                    background-color: $special-green-hover;
+                    color: $special-green;
+                }
+                @media (max-width:768px) {
+                    width: 100%;
+                    font-size: 15px;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,174 @@
+main {
+  .for-faq {
+    background-color: #f3f3f3 !important;
+    .faqs-first-right {
+      @include flexible(center, center, row);
+      img {
+        height: 233.188px;
+      }
+      @media (max-width:768px) {
+        display: none;
+      }
+    }
+  }
+  #lastAccordion{
+    @media (max-width:768px) {
+        .for-faq-mobile{
+            padding: 0px 10px !important;
+        }
+        .for-faq-title-mobile{
+            h2{
+                font-size: 30px;
+                margin: 0px;
+                
+            };
+        }
+    }
+  }
+  #question {
+    background-color: #f3f3f3 !important;
+    .question-left {
+      h2 {
+        font-size: 44px;
+        line-height: 1.07;
+        font-weight: bold;
+        text-align: inherit;
+        width: 90%;
+      }
+      .question-left-p-side {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        p {
+          font-size: 18px;
+          width: 82%;
+        }
+      }
+      @media (max-width:768px) {
+        h2{
+            width: 100%;
+            font-size: 30px;
+            text-align: center;
+        }
+        .question-left-p-side{
+            p{
+                width: 100%;
+                text-align: center;
+            }
+        }
+      }
+      @media (min-width:768px) and (max-width:1400px) {
+        padding-right: 10%;
+        h2{
+            font-size: 39px;
+            width: 100%;
+        }
+        .question-left-p-side{
+            p{
+                width: 100%;
+            }
+        }
+       
+      }
+    }
+    .question-right {
+      form {
+        width: 100%;
+        .inputs-div {
+          margin-bottom: 24px;
+          label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: 700;
+          }
+          input {
+            background-color: transparent;
+            display: block;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            height: 46px;
+            box-sizing: border-box;
+            padding: 0px 16px;
+            border: 1px solid $social-media;
+          }
+        }
+        .what-selected {
+          margin-bottom: 24px;
+          position: relative;
+          label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+          }
+          select {
+            width: 100%;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(168, 168, 168);
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 2px;
+            appearance: none;
+            position: relative;
+            outline: none;
+            background-color: transparent;
+            font-size: 1rem;
+            height: 46px;
+            width: 100%;
+            color: rgb(168, 168, 168);
+            box-sizing: border-box;
+            text-indent: 16px;
+
+            z-index: 3;
+          }
+          .faq-select-img {
+            position: absolute;
+            top: 55%;
+            left: 93%;
+          }
+        }
+        button {
+          outline: none;
+          width: 100%;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          font-weight: bold;
+          height: 46px;
+          padding: 0px 36px;
+          text-decoration: none;
+          border: none;
+          border-radius: 24px;
+          background-color: $special-green;
+          color: $special-green-hover;
+          transition: 0.3s all ease-in-out;
+          appearance: none;
+          &:hover {
+            background-color: $special-green-hover;
+            color: $special-green;
+          }
+        }
+        .title-area-faq {
+          p {
+            opacity: 0;
+            line-height: 1.4;
+            grid-column: 1 / auto;
+            text-align: center;
+            width: 80%;
+            margin: 16px auto 0px;
+            @media (max-width:768px) {
+                width: 100%; 
+            }
+          }
+        }
+      }
+    }
+    @media (max-width:768px) {
+        .for-faq-mobile{
+            padding: 0px 10px;
+        }
+    }
+  }
+}

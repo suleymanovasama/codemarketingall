@@ -1,0 +1,27 @@
+#policy-faq{
+    @include padding(64px 64px);
+    h1{
+        font-size: 54px;
+        line-height: 1;
+        margin-bottom: 1.5rem;
+        color: $black;
+         
+    }
+    p{
+        line-height: 1.4;
+        margin-bottom: 1em;
+    }
+    ul{
+       @include ul(
+        $pad:0px,
+        $mar:20px 0px,
+        $list-style:none
+       )
+    }
+    @media (max-width:768px) {
+        @include padding(32px 32px);
+        h1{
+            font-size: 34px;
+        }
+    }  
+}

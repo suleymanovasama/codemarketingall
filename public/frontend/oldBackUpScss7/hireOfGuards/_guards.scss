@@ -1,0 +1,98 @@
+.for-guards{
+    background-color: $lastcaruesel-background !important;
+    .for-guards-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media (max-width:768px) {
+            h1{
+                margin-bottom: 60px;
+                padding-right: 30px;
+            }
+            p{
+                margin-bottom: 60px;
+            }
+        }
+        a{
+            text-decoration: none;
+            padding: 0px 36px;
+            height: 46px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $special-green;
+            color: $special-green-hover;
+            transition: 0.3s all ease-in-out;
+            border: none;
+            border-radius: 24px;
+            font-weight: bold;
+            &:hover{
+                background-color: $special-green-hover;
+                color: $special-green;
+            }
+            @media (max-width:768px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#whycyber{
+    // border: 2px solid red;
+    .row{
+        padding: 0px 80px;
+        @media (max-width:768px) {
+            padding: 0px 24px;
+        }
+    }
+
+    .cybre-text-area{
+        padding: 0px 40px;
+        margin: 32px 0px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            @include TextFont(
+                $f_size:44px,
+                $text_weight:bold,
+                $padding:8px 0 32px 0,
+                $line_height:1.07
+
+            );
+        }
+        p{
+            @include TextFont(
+                $f_size:18px,
+                $line_height:1.4,
+                $margin: 0 0 16px 0,
+
+            );
+        }
+        @media (max-width:768px) {
+            padding: 0;
+            margin: 0;
+            h2{
+                @include TextFont(
+                    $f_size:1.875rem,
+                );
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .cyber-img{
+
+        img{
+            max-width:100%;
+            object-fit: cover;
+            width: 100%;
+            // height: auto;
+        }
+
+    }
+
+}
